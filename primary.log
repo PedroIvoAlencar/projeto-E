@@ -1,0 +1,49 @@
+2026-11-14 11:02:42.565 -03 [26200] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:02:42.572 -03 [26200] LOG:  escutando no endereço IPv6 "::1", porta 5442
+2026-11-14 11:02:42.572 -03 [26200] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5442
+2026-11-14 11:02:42.747 -03 [26072] LOG:  sistema de banco de dados foi desligado em 2026-11-14 11:02:15 -03
+2026-11-14 11:02:42.754 -03 [26200] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2026-11-14 11:03:48.478 -03 [25040] LOG:  checkpoint starting: force wait
+2026-11-14 11:03:54.012 -03 [25040] LOG:  checkpoint complete: wrote 45 buffers (0.3%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=5.020 s, sync=0.042 s, total=5.611 s; sync files=15, longest=0.005 s, average=0.003 s; distance=8250 kB, estimate=8250 kB; lsn=0/2000080, redo lsn=0/2000028
+2026-11-14 11:08:48.019 -03 [25040] LOG:  checkpoint starting: time
+2026-11-14 11:09:00.096 -03 [25040] LOG:  checkpoint complete: wrote 109 buffers (0.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=11.930 s, sync=0.085 s, total=12.077 s; sync files=60, longest=0.017 s, average=0.002 s; distance=17022 kB, estimate=17022 kB; lsn=0/309FB48, redo lsn=0/309FAB8
+2026-11-14 11:15:03.098 -03 [26200] LOG:  pedido de desligamento rápido foi recebido
+2026-11-14 11:15:03.099 -03 [26200] LOG:  interrompendo quaisquer transações ativas
+2026-11-14 11:15:03.108 -03 [26200] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 7056) terminou com código de retorno 1
+2026-11-14 11:15:03.111 -03 [25040] LOG:  desligando
+2026-11-14 11:15:03.112 -03 [25040] LOG:  checkpoint starting: shutdown immediate
+2026-11-14 11:15:03.171 -03 [25040] LOG:  checkpoint complete: wrote 8 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.014 s, sync=0.008 s, total=0.061 s; sync files=8, longest=0.003 s, average=0.001 s; distance=20 kB, estimate=15322 kB; lsn=0/30A4E40, redo lsn=0/30A4E40
+2026-11-14 11:15:03.202 -03 [26200] LOG:  sistema de banco de dados está desligado
+2026-11-14 11:21:43.802 -03 [3932] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:21:43.805 -03 [3932] LOG:  escutando no endereço IPv6 "::1", porta 5442
+2026-11-14 11:21:43.806 -03 [3932] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5442
+2026-11-14 11:21:43.904 -03 [9244] LOG:  sistema de banco de dados foi desligado em 2026-11-14 11:21:04 -03
+2026-11-14 11:21:43.910 -03 [3932] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2026-11-14 11:22:59.817 -03 [24080] LOG:  checkpoint starting: force wait
+2026-11-14 11:23:00.286 -03 [24080] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.445 s, sync=0.010 s, total=0.471 s; sync files=6, longest=0.003 s, average=0.002 s; distance=8250 kB, estimate=8250 kB; lsn=0/20000B8, redo lsn=0/2000028
+2026-11-14 11:23:20.663 -03 [3932] LOG:  SIGHUP recebido, recarregando arquivos de configuração
+2026-11-14 11:23:20.666 -03 [3932] LOG:  parâmetro "synchronous_standby_names" mudou para "*"
+2026-11-14 11:23:25.120 -03 [16184] LOG:  standby "walreceiver" is now a synchronous standby with priority 1
+2026-11-14 11:23:25.120 -03 [16184] COMANDO:  START_REPLICATION SLOT "replica1_slot" 0/3000000 TIMELINE 1
+2026-11-14 11:25:20.445 -03 [24080] LOG:  desligando
+2026-11-14 11:25:20.448 -03 [15892] AVISO:  cancelando a espera por replicação síncrona devido a um pedido do usuário
+2026-11-14 11:25:20.448 -03 [15892] DETALHE:  A transação foi efetivada localmente, mas pode não ter sido replicado para o servidor em espera.
+2026-11-14 11:25:20.451 -03 [3932] LOG:  pedido de desligamento rápido foi recebido
+2026-11-14 11:25:20.451 -03 [24080] LOG:  checkpoint starting: shutdown immediate
+2026-11-14 11:25:20.452 -03 [3932] LOG:  interrompendo quaisquer transações ativas
+2026-11-14 11:25:20.459 -03 [5628] ERRO:  cancelando o comando devido a um pedido do usuário
+2026-11-14 11:25:20.475 -03 [15892] FATAL:  terminando a conexão devido a um comando do administrador
+2026-11-14 11:25:20.488 -03 [3932] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 5628) terminou com código de retorno 1
+2026-11-14 11:25:20.518 -03 [24080] LOG:  checkpoint complete: wrote 80 buffers (0.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.022 s, sync=0.025 s, total=0.073 s; sync files=42, longest=0.006 s, average=0.001 s; distance=16817 kB, estimate=16817 kB; lsn=0/306C498, redo lsn=0/306C498
+2026-11-14 11:25:20.519 -03 [3932] LOG:  WAL was shut down unexpectedly
+2026-11-14 11:25:20.555 -03 [3932] LOG:  desligamento anormal do sistema de banco de dados
+2026-11-14 11:25:20.558 -03 [3932] LOG:  sistema de banco de dados está desligado
+2026-11-14 11:26:09.592 -03 [26352] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:26:09.596 -03 [26352] LOG:  escutando no endereço IPv6 "::1", porta 5442
+2026-11-14 11:26:09.597 -03 [26352] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5442
+2026-11-14 11:26:09.693 -03 [8324] LOG:  sistema de banco de dados foi desligado em 2026-11-14 11:25:20 -03
+2026-11-14 11:26:09.701 -03 [26352] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2026-11-14 11:26:27.185 -03 [26352] LOG:  SIGHUP recebido, recarregando arquivos de configuração
+2026-11-14 11:26:27.185 -03 [26352] LOG:  parâmetro "synchronous_standby_names" foi removido do arquivo de configuração, reiniciar para padrão
+2026-11-14 11:31:09.201 -03 [26344] LOG:  checkpoint starting: time
+2026-11-14 11:31:09.452 -03 [26344] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.220 s, sync=0.006 s, total=0.258 s; sync files=4, longest=0.002 s, average=0.002 s; distance=9 kB, estimate=9 kB; lsn=0/306EA58, redo lsn=0/306EA00

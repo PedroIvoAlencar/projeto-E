@@ -1,0 +1,74 @@
+2026-11-14 11:04:24.888 -03 [8852] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:04:24.899 -03 [8852] LOG:  escutando no endereço IPv6 "::1", porta 5443
+2026-11-14 11:04:24.899 -03 [8852] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5443
+2026-11-14 11:04:25.083 -03 [18268] LOG:  sistema de banco de dados foi interrompido; última execução em 2026-11-14 11:03:53 -03
+2026-11-14 11:04:25.189 -03 [18268] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/2000080, on timeline ID 1
+2026-11-14 11:04:25.189 -03 [18268] LOG:  entrando no modo em espera
+2026-11-14 11:04:25.200 -03 [18268] LOG:  redo inicia em 0/2000028
+2026-11-14 11:04:25.225 -03 [18268] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000158
+2026-11-14 11:04:25.227 -03 [18268] LOG:  estado de recuperação consistente alcançado em 0/2000158
+2026-11-14 11:04:25.227 -03 [8852] LOG:  o sistema de banco de dados está pronto para aceitar conexões de leitura-apenas
+2026-11-14 11:04:25.393 -03 [17060] LOG:  iniciado fluxo de WAL do principal em 0/3000000 na linha do tempo 1
+2026-11-14 11:09:25.075 -03 [26252] LOG:  restartpoint starting: time
+2026-11-14 11:09:37.438 -03 [26252] LOG:  restartpoint complete: wrote 112 buffers (0.7%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=12.286 s, sync=0.047 s, total=12.367 s; sync files=61, longest=0.004 s, average=0.001 s; distance=17022 kB, estimate=17022 kB; lsn=0/309FB48, redo lsn=0/309FAB8
+2026-11-14 11:09:37.440 -03 [26252] LOG:  ponto de reinício de recuperação em 0/309FAB8
+2026-11-14 11:09:37.440 -03 [26252] DETALHE:  A última transação completada ocorreu às 2026-11-14 11:08:13.006463-03 (momento de registro).
+2026-11-14 11:14:25.195 -03 [8852] LOG:  pedido de desligamento rápido foi recebido
+2026-11-14 11:14:25.196 -03 [8852] LOG:  interrompendo quaisquer transações ativas
+2026-11-14 11:14:25.197 -03 [17060] FATAL:  terminando o processo walreceiver devido a um comando do administrador
+2026-11-14 11:14:25.206 -03 [26252] LOG:  desligando
+2026-11-14 11:14:25.230 -03 [8852] LOG:  sistema de banco de dados está desligado
+2026-11-14 11:15:25.172 -03 [23968] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:15:25.176 -03 [23968] LOG:  escutando no endereço IPv6 "::1", porta 5443
+2026-11-14 11:15:25.176 -03 [23968] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5443
+2026-11-14 11:15:25.268 -03 [9064] LOG:  sistema de banco de dados foi desligado durante recuperação em 2026-11-14 11:14:25 -03
+2026-11-14 11:15:25.270 -03 [9064] LOG:  entrando no modo em espera
+2026-11-14 11:15:25.273 -03 [9064] LOG:  redo inicia em 0/309FAB8
+2026-11-14 11:15:25.274 -03 [9064] LOG:  estado de recuperação consistente alcançado em 0/309FBF8
+2026-11-14 11:15:25.274 -03 [23968] LOG:  o sistema de banco de dados está pronto para aceitar conexões de leitura-apenas
+2026-11-14 11:15:25.274 -03 [9064] LOG:  comprimento de registro inválido em 0/309FBF8: esperado pelo menos 24, obtido 0
+2026-11-14 11:15:25.684 -03 [9064] LOG:  pedido de promoção foi recebido
+2026-11-14 11:15:25.685 -03 [17808] FATAL:  terminando o processo walreceiver devido a um comando do administrador
+2026-11-14 11:15:25.686 -03 [9064] LOG:  refazer feito em 0/309FBC0 uso do sistema: CPU: usuário: 0.00 s, sistema: 0.00 s, decorrido: 0.41 s
+2026-11-14 11:15:25.689 -03 [9064] LOG:  novo ID de linha do tempo selecionado: 2
+2026-11-14 11:15:25.756 -03 [9064] LOG:  recuperação do archive está completa
+2026-11-14 11:15:25.774 -03 [10304] LOG:  checkpoint starting: force
+2026-11-14 11:15:25.776 -03 [23968] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2026-11-14 11:15:25.786 -03 [10304] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.014 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/309FC88, redo lsn=0/309FC30
+2026-11-14 11:18:22.619 -03 [23968] LOG:  pedido de desligamento rápido foi recebido
+2026-11-14 11:18:22.620 -03 [23968] LOG:  interrompendo quaisquer transações ativas
+2026-11-14 11:18:22.626 -03 [23968] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 10280) terminou com código de retorno 1
+2026-11-14 11:18:22.628 -03 [10304] LOG:  desligando
+2026-11-14 11:18:22.629 -03 [10304] LOG:  checkpoint starting: shutdown immediate
+2026-11-14 11:18:22.689 -03 [10304] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.003 s, total=0.061 s; sync files=3, longest=0.001 s, average=0.001 s; distance=12 kB, estimate=12 kB; lsn=0/30A2FB0, redo lsn=0/30A2FB0
+2026-11-14 11:18:22.712 -03 [23968] LOG:  sistema de banco de dados está desligado
+2026-11-14 11:23:03.548 -03 [7344] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:23:03.552 -03 [7344] LOG:  escutando no endereço IPv6 "::1", porta 5443
+2026-11-14 11:23:03.552 -03 [7344] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5443
+2026-11-14 11:23:03.652 -03 [18076] LOG:  sistema de banco de dados foi interrompido; última execução em 2026-11-14 11:23:00 -03
+2026-11-14 11:23:03.722 -03 [18076] LOG:  starting backup recovery with redo LSN 0/2000028, checkpoint LSN 0/20000B8, on timeline ID 1
+2026-11-14 11:23:03.722 -03 [18076] LOG:  entrando no modo em espera
+2026-11-14 11:23:03.725 -03 [18076] LOG:  redo inicia em 0/2000028
+2026-11-14 11:23:03.740 -03 [18076] LOG:  completed backup recovery with redo LSN 0/2000028 and end LSN 0/2000158
+2026-11-14 11:23:03.741 -03 [18076] LOG:  estado de recuperação consistente alcançado em 0/2000158
+2026-11-14 11:23:03.741 -03 [7344] LOG:  o sistema de banco de dados está pronto para aceitar conexões de leitura-apenas
+2026-11-14 11:23:03.859 -03 [2848] LOG:  iniciado fluxo de WAL do principal em 0/3000000 na linha do tempo 1
+2026-11-14 11:24:05.370 -03 [7344] LOG:  pedido de desligamento rápido foi recebido
+2026-11-14 11:24:05.371 -03 [7344] LOG:  interrompendo quaisquer transações ativas
+2026-11-14 11:24:05.371 -03 [2848] FATAL:  terminando o processo walreceiver devido a um comando do administrador
+2026-11-14 11:24:05.381 -03 [17652] LOG:  desligando
+2026-11-14 11:24:05.417 -03 [7344] LOG:  sistema de banco de dados está desligado
+2026-11-14 11:26:42.544 -03 [14500] LOG:  iniciando PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-11-14 11:26:42.549 -03 [14500] LOG:  escutando no endereço IPv6 "::1", porta 5443
+2026-11-14 11:26:42.549 -03 [14500] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5443
+2026-11-14 11:26:42.635 -03 [14028] LOG:  sistema de banco de dados foi desligado durante recuperação em 2026-11-14 11:24:05 -03
+2026-11-14 11:26:42.636 -03 [14028] LOG:  entrando no modo em espera
+2026-11-14 11:26:42.639 -03 [14028] LOG:  redo inicia em 0/2000028
+2026-11-14 11:26:42.640 -03 [14028] LOG:  estado de recuperação consistente alcançado em 0/3000060
+2026-11-14 11:26:42.640 -03 [14500] LOG:  o sistema de banco de dados está pronto para aceitar conexões de leitura-apenas
+2026-11-14 11:26:42.640 -03 [14028] LOG:  comprimento de registro inválido em 0/3000060: esperado pelo menos 24, obtido 0
+2026-11-14 11:26:42.822 -03 [25616] LOG:  iniciado fluxo de WAL do principal em 0/3000000 na linha do tempo 1
+2026-11-14 11:31:42.646 -03 [21816] LOG:  restartpoint starting: time
+2026-11-14 11:31:51.454 -03 [21816] LOG:  restartpoint complete: wrote 80 buffers (0.5%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=8.760 s, sync=0.028 s, total=8.811 s; sync files=43, longest=0.004 s, average=0.001 s; distance=16826 kB, estimate=16826 kB; lsn=0/306EA58, redo lsn=0/306EA00
+2026-11-14 11:31:51.454 -03 [21816] LOG:  ponto de reinício de recuperação em 0/306EA00
+2026-11-14 11:31:51.454 -03 [21816] DETALHE:  A última transação completada ocorreu às 2026-11-14 11:24:24.277634-03 (momento de registro).
