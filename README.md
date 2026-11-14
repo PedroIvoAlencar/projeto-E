@@ -17,11 +17,11 @@ Neste cenário, simulou-se a interrupção da rede entre o servidor primário e 
 
 | Horário | Ação Executada | Resultado / Estado do Sistema |
 | :--- | :--- | :--- |
-| `[HH:MM:SS]` | Desligamento da réplica (`pg_ctl -D replica -m fast stop`) | Réplica isolada (simulando corte de rede). |
-| `[HH:MM:SS]` | Inserção de 50 eventos no primário (`INSERT INTO eventos ...`) | Dados gravados apenas no primário. Anotação do ID máximo ($M_1$). |
-| `[HH:MM:SS]` | Queda abrupta do primário (`pg_ctl -D primary -m fast stop`) | Anotação do horário $T_0$. Primário e réplica inativos. |
-| `[HH:MM:SS]` | Inicialização e promoção da réplica (`pg_promote()`) | Réplica promovida a novo primário em $T_1$. |
-| `[HH:MM:SS]` | Consulta do ID máximo no novo primário ($M_2$) | Constatação da perda de dados equivalentes aos eventos inseridos no isolamento. |
+| `[11:24:10]` | Desligamento da réplica (`pg_ctl -D replica -m fast stop`) | Réplica isolada (simulando corte de rede). |
+| `[11:25:00]` | Inserção de 50 eventos no primário (`INSERT INTO eventos ...`) | Dados gravados apenas no primário. Anotação do ID máximo ($M_1$). |
+| `[11:26:15]` | Queda abrupta do primário (`pg_ctl -D primary -m fast stop`) | Anotação do horário $T_0$. Primário e réplica inativos. |
+| `[11:27:00]` | Inicialização e promoção da réplica (`pg_promote()`) | Réplica promovida a novo primário em $T_1$. |
+| `[11:27:30]` | Consulta do ID máximo no novo primário ($M_2$) | Constatação da perda de dados equivalentes aos eventos inseridos no isolamento. |
 
 ---
 
